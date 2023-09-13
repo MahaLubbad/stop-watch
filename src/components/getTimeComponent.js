@@ -5,11 +5,6 @@ function getTimeComponent()
     const time = document.createElement("div");
     time.className = 'time';
 
-    const hours = document.createElement("span");
-  hours.className = "minutes";
-    hours.innerText = (data.hours) < 10 ? "0" + data.hours + " : " : data.hours + " : ";
-
-
     const minutes = document.createElement("span");
     minutes.className = "minutes";
     minutes.innerText = (data.minutes) < 10 ? "0" + data.minutes + " : " : data.minutes + " : ";
@@ -22,7 +17,7 @@ function getTimeComponent()
     milliseconds.className = "milliseconds";    
     milliseconds.innerText = (data.milliseconds) < 10 ? "00" + data.milliseconds: (data.milliseconds < 100 ? "0" + data.milliseconds: data.milliseconds);
 
-    time.append(hours,minutes, seconds, milliseconds);
+    time.append(minutes, seconds, milliseconds);
 
     return time; 
 }

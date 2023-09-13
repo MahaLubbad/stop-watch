@@ -1,5 +1,5 @@
 import data from "../data.js";
-import getTimeComponent from "../components/test.js";
+import getTimeComponent from "../components/getTimeComponent.js";
 
 const timeElement = document.getElementById("time");
 
